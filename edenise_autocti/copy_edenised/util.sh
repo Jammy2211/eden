@@ -1,0 +1,13 @@
+echo "Copying autocti/util -> VIS_CTI_Util"
+
+AUTO_SRC_PATH_UTIL=$AUTOCTI_EDEN_PATH"/autocti/util"
+VIS_SRC_PATH_UTIL=$VIS_AUTOCTI_PATH"/VIS_CTI_Util/python/VIS_CTI_Util"
+
+cp -r $AUTO_SRC_PATH_UTIL/*.py $VIS_SRC_PATH_UTIL/
+
+AUTO_TEST_PATH_UTIL=$AUTOCTI_EDEN_PATH/"test_autocti/unit/util"
+VIS_TEST_PATH_UTIL=$VIS_AUTOCTI_PATH"/VIS_CTI_Util/tests/python"
+
+cp -r $AUTO_SRC_PATH_UTIL/* $VIS_TEST_PATH_UTIL/
+
+rm -rf $VIS_TEST_PATH_UTIL/__init__.py

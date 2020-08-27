@@ -1,0 +1,28 @@
+echo "Copying autoarray/structures -> VIS_AutoArray_Structures"
+
+AUTO_SRC_PATH_STRUCTURES=$AUTOARRAY_EDEN_PATH"/autoarray/structures"
+VIS_SRC_PATH_STRUCTURES=$VIS_AUTOARRAY_PATH"/VIS_AutoArray_Structures/python/VIS_AutoArray_Structures"
+
+cp -r $AUTO_SRC_PATH_STRUCTURES/abstract_structure.py $VIS_SRC_PATH_STRUCTURES/
+cp -r $AUTO_SRC_PATH_STRUCTURES/region.py $VIS_SRC_PATH_STRUCTURES/
+cp -r $AUTO_SRC_PATH_STRUCTURES/arrays/abstract_array.py $VIS_SRC_PATH_STRUCTURES/
+cp -r $AUTO_SRC_PATH_STRUCTURES/arrays/arrays.py $VIS_SRC_PATH_STRUCTURES/
+cp -r $AUTO_SRC_PATH_STRUCTURES/grids/abstract_grid.py $VIS_SRC_PATH_STRUCTURES/
+cp -r $AUTO_SRC_PATH_STRUCTURES/grids/grids.py $VIS_SRC_PATH_STRUCTURES/
+cp -r $AUTO_SRC_PATH_STRUCTURES/frames/abstract_frame.py $VIS_SRC_PATH_STRUCTURES/
+cp -r $AUTO_SRC_PATH_STRUCTURES/frames/frames.py $VIS_SRC_PATH_STRUCTURES/
+
+cp $AUTO_SRC_PATH_STRUCTURES/__init__.py $VIS_SRC_PATH_STRUCTURES/
+
+AUTO_TEST_PATH_STRUCTURES=$AUTOARRAY_EDEN_PATH/"test_autoarray/unit/structures"
+VIS_TEST_PATH_STRUCTURES=$VIS_AUTOARRAY_PATH"/VIS_AutoArray_Structures/tests/python"
+
+cp -r $AUTO_TEST_PATH_STRUCTURES/test_region.py $VIS_TEST_PATH_STRUCTURES/
+cp -r $AUTO_TEST_PATH_STRUCTURES/arrays/test_abstract_array.py $VIS_TEST_PATH_STRUCTURES/
+cp -r $AUTO_TEST_PATH_STRUCTURES/arrays/test_arrays.py $VIS_TEST_PATH_STRUCTURES/
+cp -r $AUTO_TEST_PATH_STRUCTURES/grids/test_abstract_grid.py $VIS_TEST_PATH_STRUCTURES/
+cp -r $AUTO_TEST_PATH_STRUCTURES/grids/test_grids.py $VIS_TEST_PATH_STRUCTURES/
+cp -r $AUTO_TEST_PATH_STRUCTURES/frames/test_abstract_frame.py $VIS_TEST_PATH_STRUCTURES/
+cp -r $AUTO_TEST_PATH_STRUCTURES/frames/test_frames.py $VIS_TEST_PATH_STRUCTURES/
+
+rm -rf $VIS_TEST_PATH_STRUCTURES/__init__.py

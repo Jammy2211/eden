@@ -1,0 +1,13 @@
+echo "Copying arctic -> VIS_CTI_Arctic"
+
+AUTO_SRC_PATH_ARCTIC=$PYAUTO_PATH"/arctic/arcticpy"
+VIS_SRC_PATH_ARCTIC=$VIS_AUTOCTI_PATH"/VIS_CTI_Arctic/python/VIS_CTI_Arctic"
+
+cp -r $AUTO_SRC_PATH_ARCTIC/*.py $VIS_SRC_PATH_ARCTIC/
+
+AUTO_TEST_PATH_ARCTIC=$PYAUTO_PATH"/arctic/test_arcticpy"
+VIS_TEST_PATH_ARCTIC=$VIS_AUTOCTI_PATH"/VIS_CTI_Arctic/tests/python"
+
+cp -r $AUTO_TEST_PATH_ARCTIC/* $VIS_TEST_PATH_ARCTIC
+
+rm -rf $VIS_TEST_PATH_ARCTIC/__init__.py
