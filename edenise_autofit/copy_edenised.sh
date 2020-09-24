@@ -3,7 +3,7 @@ echo "------ copy_edenised.sh ------"
 echo
 
 AUTOFIT_EDEN_PATH=$EDEN_PATH"/autofit_eden"
-VIS_AUTOFIT_PATH=$PYEUCLID_PATH"/VIS_AutoFit"
+
 
 echo "Copying from edenised PyAutoFit to VIS_AutoFit"
 

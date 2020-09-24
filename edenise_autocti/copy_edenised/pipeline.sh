@@ -1,14 +1,14 @@
-echo "Copying autocti/pipeline -> VIS_CTI_Pipeline"
+echo "Copying autocti/pipeline -> VIS_CTI_AutoCTI_Pipeline"
 
 AUTO_SRC_PATH_PIPELINE=$AUTOCTI_EDEN_PATH"/autocti/pipeline"
-VIS_SRC_PATH_PIPELINE=$VIS_AUTOCTI_PATH"/VIS_CTI_Pipeline/python/VIS_CTI_Pipeline"
+VIS_SRC_PATH_PIPELINE=$PYEUCLID_CTI_PATH"/VIS_CTI_AutoCTI_Pipeline/python/VIS_CTI_AutoCTI_Pipeline"
 
 cp $AUTO_SRC_PATH_PIPELINE/*.py $VIS_SRC_PATH_PIPELINE/
 
 AUTO_TEST_PATH_PIPELINE=$AUTOCTI_EDEN_PATH/"test_autocti/unit/pipeline"
-VIS_TEST_PATH_PIPELINE=$VIS_AUTOCTI_PATH"/VIS_CTI_Pipeline/tests/python"
+VIS_TEST_PATH_PIPELINE=$PYEUCLID_CTI_PATH"/VIS_CTI_AutoCTI_Pipeline/tests/python"
 
-cp $AUTO_TEST_PATH_PIPELINE/*.py $VIS_AUTOCTI_PATH/VIS_CTI_Pipeline/tests/python/
+cp $AUTO_TEST_PATH_PIPELINE/*.py $PYEUCLID_CTI_PATH/VIS_CTI_AutoCTI_Pipeline/tests/python/
 cp -r $AUTO_TEST_PATH_PIPELINE/files/plot $VIS_TEST_PATH_PIPELINE/files/
 cp -r $AUTO_TEST_PATH_PIPELINE/files/plotter $VIS_TEST_PATH_PIPELINE/files/
 

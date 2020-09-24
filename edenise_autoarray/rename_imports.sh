@@ -1,13 +1,11 @@
 ### Module Mappings
 
-# autoarray/util -> VIS_AutoArray_Util
-# autoarray/structures -> VIS_AutoArray_Structures
+# autoarray/util -> VIS_CTI_AutoArray_Util
+# autoarray/structures -> VIS_CTI_AutoArray_Structures
 
 echo
 echo "------ rename_imports.sh ------"
 echo
-
-VIS_AUTOARRAY_PATH=$PYEUCLID_PATH"/VIS_AutoArray"
 
 EDEN_RENAME_PATH=$EDEN_PATH"/edenise_autoarray/rename_imports"
 

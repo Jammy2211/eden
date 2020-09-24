@@ -3,7 +3,6 @@ echo "------ copy_edenised_to_pyeuclid.sh ------"
 echo
 
 AUTOARRAY_EDEN_PATH=$EDEN_PATH"/autoarray_eden"
-VIS_AUTOARRAY_PATH=$PYEUCLID_PATH"/VIS_AutoArray"
 
 echo "Copying from edenised PyAutoArray to VIS_AutoArray"
 

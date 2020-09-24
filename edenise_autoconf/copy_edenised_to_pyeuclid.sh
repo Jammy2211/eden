@@ -3,25 +3,25 @@ echo "------ copy_edenised_to_pyeuclid.sh ------"
 echo
 
 AUTO_EDEN_PATH=$EDEN_PATH"/autoconf_eden"
-VIS_PATH=$PYEUCLID_PATH"/VIS_AutoConf"
+VIS_PATH=$PYEUCLID_PATH"/VIS_CTI"
 
 AUTO_SRC_PATH=$AUTO_EDEN_PATH"/autoconf"
 AUTO_TEST_PATH=$AUTO_EDEN_PATH"/test_autoconf"
 
-VIS_SRC_PATH=$VIS_PATH"/VIS_Conf/python/VIS_Conf"
-VIS_TEST_PATH=$VIS_PATH"/VIS_Conf/tests/python"
+VIS_SRC_PATH=$VIS_PATH"/VIS_CTI_AutoConf_Conf/python/VIS_CTI_AutoConf_Conf"
+VIS_TEST_PATH=$VIS_PATH"/VIS_CTI_AutoConf_Conf/tests/python"
 
-echo "Copying source code from" $AUTO_EDEN_PATH "to "$VIS_AutoConf
+echo "Copying source code from" $AUTO_EDEN_PATH "to "$VIS_CTI
 cp -r $AUTO_SRC_PATH/* $VIS_SRC_PATH/
 
 echo "Copying exc.py, mock.py and conftest.py files from autofit to VIS_AutoFit main path"
-cp -r $AUTO_SRC_PATH/exc.py $VIS_PATH/VIS_Conf/python/VIS_Conf/
-cp -r $AUTO_TEST_PATH/mock_real.py $VIS_PATH/VIS_Conf/python/VIS_Conf/
+cp -r $AUTO_SRC_PATH/exc.py $VIS_PATH/VIS_CTI_AutoConf_Conf/python/VIS_CTI_AutoConf_Conf/
+cp -r $AUTO_TEST_PATH/mock_real.py $VIS_PATH/VIS_CTI_AutoConf_Conf/python/VIS_CTI_AutoConf_Conf/
 
-echo "Copying tests from" $AUTO_EDEN_PATH "to "$VIS_AutoConf
+echo "Copying tests from" $AUTO_EDEN_PATH "to "$VIS_CTI
 cp -r $AUTO_TEST_PATH/unit/* $VIS_TEST_PATH/
 
-echo "moving autoconf json_prior files out of their sub-package to the main VIS_AutoConf package"
+echo "moving autoconf json_prior files out of their sub-package to the main VIS_CTI package"
 cp -r $VIS_SRC_PATH/json_prior/config.py $VIS_SRC_PATH/config.py
 cp -r $VIS_SRC_PATH/json_prior/converter.py $VIS_SRC_PATH/converter.py
 cp -r $VIS_TEST_PATH/json_prior/* $VIS_TEST_PATH/

@@ -1,7 +1,7 @@
-echo "Copying non_linear module to VIS_AutoFit_NonLinear"
+echo "Copying non_linear module to VIS_CTI_AutoFit_NonLinear"
 
 AUTO_SRC_PATH_NONLINEAR=$AUTOFIT_EDEN_PATH"/autofit/non_linear"
-VIS_SRC_PATH_NONLINEAR=$VIS_AUTOFIT_PATH"/VIS_AutoFit_NonLinear/python/VIS_AutoFit_NonLinear"
+VIS_SRC_PATH_NONLINEAR=$PYEUCLID_CTI_PATH"/VIS_CTI_AutoFit_NonLinear/python/VIS_CTI_AutoFit_NonLinear"
 
 cp -r $AUTO_SRC_PATH_NONLINEAR/abstract_search.py $VIS_SRC_PATH_NONLINEAR/
 cp -r $AUTO_SRC_PATH_NONLINEAR/initializer.py $VIS_SRC_PATH_NONLINEAR/
@@ -16,7 +16,7 @@ cp -r $AUTO_SRC_PATH_NONLINEAR/nest/abstract_nest.py $VIS_SRC_PATH_NONLINEAR/
 cp -r $AUTO_SRC_PATH_NONLINEAR/nest/multi_nest.py $VIS_SRC_PATH_NONLINEAR/
 
 AUTO_TEST_PATH_NONLINEAR=$AUTOFIT_EDEN_PATH"/test_autofit/unit/non_linear"
-VIS_TEST_PATH_NONLINEAR=$VIS_AUTOFIT_PATH"/VIS_AutoFit_NonLinear/tests/python"
+VIS_TEST_PATH_NONLINEAR=$PYEUCLID_CTI_PATH"/VIS_CTI_AutoFit_NonLinear/tests/python"
 
 cp -r $AUTO_TEST_PATH_NONLINEAR/files $VIS_TEST_PATH_NONLINEAR/
 cp -r $AUTO_TEST_PATH_NONLINEAR/test_abstract_search.py $VIS_TEST_PATH_NONLINEAR/

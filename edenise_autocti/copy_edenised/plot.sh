@@ -1,12 +1,12 @@
-echo "Copying autocti/plot -> VIS_CTI_Plot"
+echo "Copying autocti/plot -> VIS_CTI_AutoCTI_Plot"
 
 AUTO_SRC_PATH_PLOT=$AUTOCTI_EDEN_PATH"/autocti/plot"
-VIS_SRC_PATH_PLOT=$VIS_AUTOCTI_PATH"/VIS_CTI_Plot/python/VIS_CTI_Plot"
+VIS_SRC_PATH_PLOT=$PYEUCLID_CTI_PATH"/VIS_CTI_AutoCTI_Plot/python/VIS_CTI_AutoCTI_Plot"
 
 cp -r $AUTO_SRC_PATH_PLOT/*.py $VIS_SRC_PATH_PLOT/
 
 AUTO_TEST_PATH_PLOT=$AUTOCTI_EDEN_PATH/"test_autocti/unit/plot"
-VIS_TEST_PATH_PLOT=$VIS_AUTOCTI_PATH"/VIS_CTI_Plot/tests/python"
+VIS_TEST_PATH_PLOT=$PYEUCLID_CTI_PATH"/VIS_CTI_AutoCTI_Plot/tests/python"
 
 cp -r $AUTO_TEST_PATH_PLOT/* $VIS_TEST_PATH_PLOT/
 

@@ -3,7 +3,7 @@ echo "------ copy_edenised_to_pyeuclid.sh ------"
 echo
 
 AUTOCTI_EDEN_PATH=$EDEN_PATH"/autocti_eden"
-VIS_AUTOCTI_PATH=$PYEUCLID_PATH"/VIS_CTI"
+
 
 echo "Copying from edenised PyAutoCTI to VIS_CTI"
 
@@ -21,3 +21,4 @@ source $EDEN_COPY_PATH"/phase_dataset.sh"
 source $EDEN_COPY_PATH"/phase_extensions.sh"
 source $EDEN_COPY_PATH"/pipeline.sh"
 source $EDEN_COPY_PATH"/plot.sh"
+source $EDEN_COPY_PATH"/util.sh"

@@ -1,18 +1,18 @@
 ### Module Mappings
 
-# autofit/mapper -> VIS_AutoFit_Mapper
-# autofit/mapper/prior -> VIS_AutoFit_Prior
-# autofit/mapper/prior_model -> VIS_AutoFit_PriorModel
-# autofit/text -> VIS_AutoFit_Text
-# autofit/tools -> VIS_AutoFit_Tools
+# autofit/mapper -> VIS_CTI_AutoFit_Mapper
+# autofit/mapper/prior -> VIS_CTI_AutoFit_Prior
+# autofit/mapper/prior_model -> VIS_CTI_AutoFit_PriorModel
+# autofit/text -> VIS_CTI_AutoFit_Text
+# autofit/tools -> VIS_CTI_AutoFit_Tools
 
 echo
 echo "------ rename_imports.sh ------"
 echo
 
-VIS_AUTOFIT_PATH=$PYEUCLID_PATH"/VIS_AutoFit"
 
-# sed -i 's/from typing_inspect import is_tuple_type//g' $VIS_AUTOFIT_PATH/*/*/*/*.py
+
+# sed -i 's/from typing_inspect import is_tuple_type//g' $PYEUCLID_CTI_PATH/*/*/*/*.py
 
 # The order prior_model -> prior -> mapper is required to change imports correctly.
 
@@ -28,4 +28,4 @@ source $EDEN_RENAME_PATH"/tools.sh"
 source $EDEN_RENAME_PATH"/extra_tests.sh"
 
 echo "Extra mappings"
-sed -i 's/dill/pickle/g' $VIS_AUTOFIT_PATH/*/*/*/*.py
+sed -i 's/dill/pickle/g' $PYEUCLID_CTI_PATH/*/*/*/*.py

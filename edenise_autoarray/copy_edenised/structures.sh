@@ -1,7 +1,7 @@
-echo "Copying autoarray/structures -> VIS_AutoArray_Structures"
+echo "Copying autoarray/structures -> VIS_CTI_AutoArray_Structures"
 
 AUTO_SRC_PATH_STRUCTURES=$AUTOARRAY_EDEN_PATH"/autoarray/structures"
-VIS_SRC_PATH_STRUCTURES=$VIS_AUTOARRAY_PATH"/VIS_AutoArray_Structures/python/VIS_AutoArray_Structures"
+VIS_SRC_PATH_STRUCTURES=$PYEUCLID_CTI_PATH"/VIS_CTI_AutoArray_Structures/python/VIS_CTI_AutoArray_Structures"
 
 cp -r $AUTO_SRC_PATH_STRUCTURES/abstract_structure.py $VIS_SRC_PATH_STRUCTURES/
 cp -r $AUTO_SRC_PATH_STRUCTURES/region.py $VIS_SRC_PATH_STRUCTURES/
@@ -15,7 +15,7 @@ cp -r $AUTO_SRC_PATH_STRUCTURES/frames/frames.py $VIS_SRC_PATH_STRUCTURES/
 cp $AUTO_SRC_PATH_STRUCTURES/__init__.py $VIS_SRC_PATH_STRUCTURES/
 
 AUTO_TEST_PATH_STRUCTURES=$AUTOARRAY_EDEN_PATH/"test_autoarray/unit/structures"
-VIS_TEST_PATH_STRUCTURES=$VIS_AUTOARRAY_PATH"/VIS_AutoArray_Structures/tests/python"
+VIS_TEST_PATH_STRUCTURES=$PYEUCLID_CTI_PATH"/VIS_CTI_AutoArray_Structures/tests/python"
 
 cp -r $AUTO_TEST_PATH_STRUCTURES/test_region.py $VIS_TEST_PATH_STRUCTURES/
 cp -r $AUTO_TEST_PATH_STRUCTURES/arrays/test_abstract_array.py $VIS_TEST_PATH_STRUCTURES/

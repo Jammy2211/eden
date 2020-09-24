@@ -1,12 +1,12 @@
-echo "Copying autocti/structures -> VIS_CTI_Structures"
+echo "Copying autocti/structures -> VIS_CTI_AutoCTI_Structures"
 
 AUTO_SRC_PATH_STRUCTURES=$AUTOCTI_EDEN_PATH"/autocti/structures"
-VIS_SRC_PATH_STRUCTURES=$VIS_AUTOCTI_PATH"/VIS_CTI_Structures/python/VIS_CTI_Structures"
+VIS_SRC_PATH_STRUCTURES=$PYEUCLID_CTI_PATH"/VIS_CTI_AutoCTI_Structures/python/VIS_CTI_AutoCTI_Structures"
 
 cp -r $AUTO_SRC_PATH_STRUCTURES/*.py $VIS_SRC_PATH_STRUCTURES/
 
 AUTO_TEST_PATH_STRUCTURES=$AUTOCTI_EDEN_PATH/"test_autocti/unit/structures"
-VIS_TEST_PATH_STRUCTURES=$VIS_AUTOCTI_PATH"/VIS_CTI_Structures/tests/python"
+VIS_TEST_PATH_STRUCTURES=$PYEUCLID_CTI_PATH"/VIS_CTI_AutoCTI_Structures/tests/python"
 
 cp -r $AUTO_TEST_PATH_STRUCTURES/* $VIS_TEST_PATH_STRUCTURES/
 
