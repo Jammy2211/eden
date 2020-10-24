@@ -15,6 +15,9 @@ rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoCTI_Dataset/tests/python/*
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoCTI_Mask/python/VIS_CTI_AutoCTI_Mask/*
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoCTI_Mask/tests/python/*
 
+rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoCTI_Mock/python/VIS_CTI_AutoCTI_Mock/*
+rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoCTI_Mock/tests/python/*
+
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoCTI_Phase_Abstract/python/VIS_CTI_AutoCTI_Phase_Abstract/*
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoCTI_Phase_Abstract/tests/python/*
 

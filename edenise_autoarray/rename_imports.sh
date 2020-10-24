@@ -10,6 +10,7 @@ echo
 EDEN_RENAME_PATH=$EDEN_PATH"/edenise_autoarray/rename_imports"
 
 source $EDEN_RENAME_PATH"/extra.sh"
+source $EDEN_RENAME_PATH"/mock.sh"
 source $EDEN_RENAME_PATH"/util.sh"
 source $EDEN_RENAME_PATH"/mask.sh"
 source $EDEN_RENAME_PATH"/arrays.sh"

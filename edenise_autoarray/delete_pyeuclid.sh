@@ -1,3 +1,4 @@
+
 echo
 echo "------ delete_pyeuclid.sh ------"
 echo
@@ -32,6 +33,9 @@ rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Fit/tests/python/*
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Instruments/python/VIS_CTI_AutoArray_Instruments/*
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Instruments/tests/python/*
 
+# rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Mock/python/VIS_CTI_AutoArray_Mock/*
+# rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Mock/tests/python/*
+
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Operators/python/VIS_CTI_AutoArray_Operators/*
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Operators/tests/python/*
 
@@ -42,7 +46,5 @@ mv $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Plot/python/__init__.py $PYEUCLID_CTI_PA
 mv $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Plot/python/plotters.py $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Plot/python/VIS_CTI_AutoArray_Plot/
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Plot/tests/python/*
 
-mv $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Util/python/VIS_CTI_AutoArray_Util/mock.py $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Util/python/
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Util/python/VIS_CTI_AutoArray_Util/*
-mv $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Util/python/mock.py $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Util/python/VIS_CTI_AutoArray_Util/
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Util/tests/python/*

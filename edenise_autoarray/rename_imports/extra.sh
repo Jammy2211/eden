@@ -12,11 +12,6 @@ echo "exc imports"
 sed -i 's/from autoarray import exc/from VIS_CTI_AutoArray_Util import exc/g' $PYEUCLID_CTI_PATH/*.py
 sed -i 's/from autoarray import exc/from VIS_CTI_AutoArray_Util import exc/g' $PYEUCLID_CTI_PATH/*/*/*/*.py
 
-echo "mock imports"
-
-sed -i 's/from test_autoarray.mock/from VIS_CTI_AutoArray_Util.mock/g' $PYEUCLID_CTI_PATH/*.py
-sed -i 's/from test_autoarray.mock/from VIS_CTI_AutoArray_Util.mock/g' $PYEUCLID_CTI_PATH/*/*/*/*.py
-
 echo "removing decorator_util references"
 
 sed -i 's/from autoarray import decorator_util//g' $PYEUCLID_CTI_PATH/*.py

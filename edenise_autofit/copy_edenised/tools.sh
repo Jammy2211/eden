@@ -12,3 +12,4 @@ VIS_TEST_PATH_TOOLS=$PYEUCLID_CTI_PATH"/VIS_CTI_AutoFit_Tools/tests/python"
 
 cp -r $AUTO_TEST_PATH_TOOLS/* $VIS_TEST_PATH_TOOLS/
 rm $VIS_TEST_PATH_TOOLS/test_edenise.py
+rm $VIS_TEST_PATH_TOOLS/__init__.py

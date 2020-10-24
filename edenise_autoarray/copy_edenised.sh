@@ -9,6 +9,7 @@ echo "Copying from edenised PyAutoArray to VIS_AutoArray"
 EDEN_COPY_PATH=$EDEN_PATH"/edenise_autoarray/copy_edenised"
 
 source $EDEN_COPY_PATH"/extra.sh"
+source $EDEN_COPY_PATH"/mock.sh"
 source $EDEN_COPY_PATH"/util.sh"
 source $EDEN_COPY_PATH"/mask.sh"
 source $EDEN_COPY_PATH"/arrays.sh"

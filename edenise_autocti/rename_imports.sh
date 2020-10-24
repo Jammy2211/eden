@@ -16,6 +16,7 @@ EDEN_RENAME_PATH=$EDEN_PATH"/edenise_autocti/rename_imports"
 
 source $EDEN_RENAME_PATH"/arctic.sh"
 source $EDEN_RENAME_PATH"/extra.sh"
+source $EDEN_RENAME_PATH"/mock.sh"
 source $EDEN_RENAME_PATH"/autofit.sh"
 source $EDEN_RENAME_PATH"/autoarray.sh"
 source $EDEN_RENAME_PATH"/mask.sh"

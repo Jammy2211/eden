@@ -12,10 +12,10 @@ EDEN_PATH=$PYAUTO_PATH"/eden"
 PYEUCLID_PATH="/home/jammy/PycharmProjects/PyEuclid"
 PYEUCLID_CTI_PATH="/home/jammy/PycharmProjects/PyEuclid/VIS_CTI"
 
-# source $EDEN_PATH"/edenise_autoconf.sh"
-# source $EDEN_PATH"/edenise_autofit.sh"
-# source $EDEN_PATH"/edenise_autoarray.sh"
-# source $EDEN_PATH"/edenise_autocti.sh"
+source $EDEN_PATH"/edenise_autoconf.sh"
+source $EDEN_PATH"/edenise_autofit.sh"
+source $EDEN_PATH"/edenise_autoarray.sh"
+source $EDEN_PATH"/edenise_autocti.sh"
 
 # Permissions
 

@@ -3,10 +3,10 @@ sed -i 's/from autofit import exc/from VIS_CTI_AutoFit_Tools import exc/g' $PYEU
 sed -i 's/from autofit import exc/from VIS_CTI_AutoFit_Tools import exc/g' $PYEUCLID_CTI_PATH/*/*/*/*.py
 
 echo "autofit mock imports"
-sed -i 's/from test_autofit import mock/from VIS_CTI_AutoFit_Tools import mock/g' $PYEUCLID_CTI_PATH/*.py
-sed -i 's/from test_autofit import mock/from VIS_CTI_AutoFit_Tools import mock/g' $PYEUCLID_CTI_PATH/*/*/*/*.py
-sed -i 's/from test_autofit.mock/from VIS_CTI_AutoFit_Tools.mock/g' $PYEUCLID_CTI_PATH/*.py
-sed -i 's/from test_autofit.mock/from VIS_CTI_AutoFit_Tools.mock/g' $PYEUCLID_CTI_PATH/*/*/*/*.py
+sed -i 's/from autofit import mock/from VIS_CTI_AutoFit_Mock import mock/g' $PYEUCLID_CTI_PATH/*.py
+sed -i 's/from autofit import mock/from VIS_CTI_AutoFit_Mock import mock/g' $PYEUCLID_CTI_PATH/*/*/*/*.py
+sed -i 's/from autofit.mock/from VIS_CTI_AutoFit_Mock.mock/g' $PYEUCLID_CTI_PATH/*.py
+sed -i 's/from autofit.mock/from VIS_CTI_AutoFit_Mock.mock/g' $PYEUCLID_CTI_PATH/*/*/*/*.py
 
 echo "map from autofit.tools -> VIS_CTI_AutoFit_Tools"
 sed -i 's/from autofit.tools/from VIS_CTI_AutoFit_Tools/g' $PYEUCLID_CTI_PATH/*.py

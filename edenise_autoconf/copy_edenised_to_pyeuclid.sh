@@ -14,9 +14,9 @@ VIS_TEST_PATH=$VIS_PATH"/VIS_CTI_AutoConf_Conf/tests/python"
 echo "Copying source code from" $AUTO_EDEN_PATH "to "$VIS_CTI
 cp -r $AUTO_SRC_PATH/* $VIS_SRC_PATH/
 
-echo "Copying exc.py, mock.py and conftest.py files from autofit to VIS_AutoFit main path"
+echo "Copying exc.py, mock.py files from autofit to VIS_AutoFit main path"
 cp -r $AUTO_SRC_PATH/exc.py $VIS_PATH/VIS_CTI_AutoConf_Conf/python/VIS_CTI_AutoConf_Conf/
-cp -r $AUTO_TEST_PATH/mock_real.py $VIS_PATH/VIS_CTI_AutoConf_Conf/python/VIS_CTI_AutoConf_Conf/
+cp -r $AUTO_SRC_PATH/mock_real.py $VIS_PATH/VIS_CTI_AutoConf_Conf/python/VIS_CTI_AutoConf_Conf/
 
 echo "Copying tests from" $AUTO_EDEN_PATH "to "$VIS_CTI
 cp -r $AUTO_TEST_PATH/unit/* $VIS_TEST_PATH/
