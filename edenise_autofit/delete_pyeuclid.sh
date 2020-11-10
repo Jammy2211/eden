@@ -15,7 +15,6 @@ rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoFit_PriorModel/python/VIS_CTI_AutoFit_Prio
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoFit_PriorModel/tests/python/*
 
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoFit_Mock/python/VIS_CTI_AutoFit_Mock/*
-rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoFit_Mock/tests/python/*
 
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoFit_NonLinear/python/VIS_CTI_AutoFit_NonLinear/*
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoFit_NonLinear/tests/python/*

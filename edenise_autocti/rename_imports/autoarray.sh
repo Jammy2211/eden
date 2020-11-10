@@ -49,11 +49,5 @@ sed -i 's/from autoarray import exc/from VIS_CTI_AutoArray_Util import exc/g' $P
 sed -i 's/from autoarray.exc/from VIS_CTI_AutoArray_Util.exc/g' $PYEUCLID_CTI_PATH/*.py
 sed -i 's/from autoarray.exc/from VIS_CTI_AutoArray_Util.exc/g' $PYEUCLID_CTI_PATH/*/*/*/*.py
 
-echo "autoarray mock imports"
-sed -i 's/from test_autoarray import mock/from VIS_CTI_AutoArray_Mock import moc/g' $PYEUCLID_CTI_PATH/*.py
-sed -i 's/from test_autoarray import mock/from VIS_CTI_AutoArray_Mock import moc/g' $PYEUCLID_CTI_PATH/*/*/*/*.py
-sed -i 's/from test_autoarray.mock/from VIS_CTI_AutoArray_Mock.mock/g' $PYEUCLID_CTI_PATH/*.py
-sed -i 's/from test_autoarray.mock/from VIS_CTI_AutoArray_Mock.mock/g' $PYEUCLID_CTI_PATH/*/*/*/*.py
-
 sed -i 's/from autocti.autoarray.structures.frames/from VIS_CTI_AutoArray_Frame/g' $PYEUCLID_CTI_PATH/*.py
 sed -i 's/from autocti.autoarray.structures.frames/from VIS_CTI_AutoArray_Frame/g' $PYEUCLID_CTI_PATH/*/*/*/*.py

@@ -12,6 +12,10 @@ EDEN_PATH=$PYAUTO_PATH"/eden"
 PYEUCLID_PATH="/home/jammy/PycharmProjects/PyEuclid"
 PYEUCLID_CTI_PATH="/home/jammy/PycharmProjects/PyEuclid/VIS_CTI"
 
+cd ..
+find . -name "*.pyc" -exec rm -f {} \;
+cd eden
+
 source $EDEN_PATH"/edenise_autoconf.sh"
 source $EDEN_PATH"/edenise_autofit.sh"
 source $EDEN_PATH"/edenise_autoarray.sh"

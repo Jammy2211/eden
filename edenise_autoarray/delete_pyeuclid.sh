@@ -34,7 +34,6 @@ rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Instruments/python/VIS_CTI_AutoArray
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Instruments/tests/python/*
 
 # rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Mock/python/VIS_CTI_AutoArray_Mock/*
-# rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Mock/tests/python/*
 
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Operators/python/VIS_CTI_AutoArray_Operators/*
 rm -rf $PYEUCLID_CTI_PATH/VIS_CTI_AutoArray_Operators/tests/python/*
